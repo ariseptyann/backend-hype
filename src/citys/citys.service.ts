@@ -12,7 +12,7 @@ export class CitysService {
     ) {}
 
     async getCitys() {
-        const citys = await this.CitysRepo.find({ relations: ['provinces'] });
+        const citys = await this.CitysRepo.find({ relations: ['province'] });
     
         return citys;
     }
